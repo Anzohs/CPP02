@@ -24,7 +24,7 @@ Fixed::Fixed(const Fixed& other) // copy constructor
 	this->value = other.getRawBits();
 }
 
-Fixed::Fixed(const int number){this->value = number;}
+Fixed::Fixed(const int number){this->value = number << fractBits;}
 Fixed::Fixed(const float f){this->value = roundf(f * (1 << this->fractBits));}
 
 
@@ -50,7 +50,7 @@ void Fixed::setRawBits(int const Raw){
 }
 
 int Fixed::toInt() const{
-	return (this->value >> fractBits);
+	return (roundf(this->value / (float)(1 << this->fractBits)));
 }
 
 float Fixed::toFloat() const{
