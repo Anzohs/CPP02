@@ -6,7 +6,7 @@
 /*   By: hladeiro <hladeiro@student.42lisboa.com>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/05 15:59:47 by hladeiro          #+#    #+#             */
-/*   Updated: 2025/04/05 18:40:57 by hladeiro         ###   ########.fr       */
+/*   Updated: 2025/04/06 20:40:05 by hladeiro         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,6 +14,7 @@
 
 #include <iostream>
 #include <ostream>
+#include <cmath>
 
 class Fixed{
 	private:
@@ -32,4 +33,4 @@ class Fixed{
 		int toInt(void) const;
 };
 //operator overload
-std::ostream& operator<<(std::ostream& os, Fixed& fp);
+std::ostream& operator<<(std::ostream& os,const Fixed& fp);

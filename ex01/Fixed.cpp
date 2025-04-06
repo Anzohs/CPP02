@@ -6,7 +6,7 @@
 /*   By: hladeiro <hladeiro@student.42lisboa.com>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/05 19:19:09 by hladeiro          #+#    #+#             */
-/*   Updated: 2025/04/05 19:19:11 by hladeiro         ###   ########.fr       */
+/*   Updated: 2025/04/06 20:41:07 by hladeiro         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,7 +36,7 @@ Fixed& Fixed::operator=(const Fixed& other) // copy assigment and sign overload
 	return (*this);
 }
 
-Fixed::~Fixed(){std::cout << "Destructor called";}
+Fixed::~Fixed(){std::cout << "Destructor called\n";}
 
 int Fixed::getRawBits(void) const
 {
