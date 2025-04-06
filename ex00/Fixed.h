@@ -12,19 +12,17 @@
 
 #pragma once
 
-
 #include <iostream>
 
 class Fixed{
-
-	public:
-		Fixed(void);
-		~Fixed(void);
-		Fixed(const Fixed& other); // Copy Constructor;
-		Fixed& operator=(const Fixed& other); // Copy Assigment and = sign overload
-		int getRawBits(void) const;
-		void setRawBits(int const Raw);
 	private:
-		int nb;
-		static const int fnb = 8;
+		int value;
+		static const int fractBits = 8;
+	public:
+		Fixed(void); //default constructor
+		~Fixed(); // destructer
+		Fixed(const Fixed& other); // copy constructor
+		Fixed& operator=(const Fixed& other); // copy assigment and sign = overload
+		int	getRawBits(void) const;
+		void setRawBits(int const Raw);
 };
