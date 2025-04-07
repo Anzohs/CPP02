@@ -6,7 +6,7 @@
 /*   By: hladeiro <hladeiro@student.42lisboa.com>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/05 19:19:09 by hladeiro          #+#    #+#             */
-/*   Updated: 2025/04/06 20:41:07 by hladeiro         ###   ########.fr       */
+/*   Updated: 2025/04/07 21:12:57 by hladeiro         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -99,7 +99,7 @@ Fixed Fixed::operator--(int){
 	return (temp);
 }
 
-Fixed Fixed::min(Fixed& other, Fixed& another){return other > another ? another : other;}
-const Fixed Fixed::min(const Fixed& other, const Fixed& another){return other.getRawBits() > another.getRawBits() ? another : other;}
-const Fixed Fixed::max(const Fixed& other, const Fixed& another){return other.getRawBits() < another.getRawBits() ? another : other;}
-Fixed Fixed::max(Fixed& other, Fixed& another){return other < another ? another : other;}
+Fixed& Fixed::min(Fixed& other, Fixed& another){return other > another ? another : other;}
+const Fixed& Fixed::min(const Fixed& other, const Fixed& another){return other.getRawBits() > another.getRawBits() ? another : other;}
+const Fixed& Fixed::max(const Fixed& other, const Fixed& another){return other.getRawBits() < another.getRawBits() ? another : other;}
+Fixed& Fixed::max(Fixed& other, Fixed& another){return other < another ? another : other;}

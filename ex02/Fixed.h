@@ -6,7 +6,7 @@
 /*   By: hladeiro <hladeiro@student.42lisboa.com>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/05 15:59:47 by hladeiro          #+#    #+#             */
-/*   Updated: 2025/04/06 20:40:05 by hladeiro         ###   ########.fr       */
+/*   Updated: 2025/04/07 21:12:31 by hladeiro         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -50,10 +50,10 @@ class Fixed{
 		Fixed operator--(void);
 		Fixed operator--(int);
 			// operator overload assigment
-		static Fixed min(Fixed& other, Fixed& another);
-		static const Fixed min(const Fixed& other, const Fixed& another);
-		static Fixed max(Fixed& other, Fixed& another);
-		static const Fixed max(const Fixed& other, const Fixed& another);
+		static Fixed& min(Fixed& other, Fixed& another);
+		static const Fixed& min(const Fixed& other, const Fixed& another);
+		static Fixed& max(Fixed& other, Fixed& another);
+		static const Fixed& max(const Fixed& other, const Fixed& another);
 
 };
 //operator overload
