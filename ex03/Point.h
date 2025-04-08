@@ -6,7 +6,7 @@
 /*   By: hladeiro <hladeiro@student.42lisboa.com>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/07 21:16:31 by hladeiro          #+#    #+#             */
-/*   Updated: 2025/04/07 21:26:30 by hladeiro         ###   ########.fr       */
+/*   Updated: 2025/04/08 18:02:34 by hladeiro         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,6 +23,7 @@ class Point{
 				Point(float x, float y);
 				~Point(void);
 				Point(Point& other);
-				Point operator=(Point& other);
-
+				Point operator=(const Point& other);
+				float get_FixedX();
+				float get_FixedY();
 };
