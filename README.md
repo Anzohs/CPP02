@@ -82,4 +82,4 @@ By completing this project, you will learn:
  - [C++ Documentation](https://cplusplus.com/)
 
 ##License
-  This project is licensed for educational purposes as part of the 42 curriculum
+This project is licensed for educational purposes as part of the 42 curriculum
